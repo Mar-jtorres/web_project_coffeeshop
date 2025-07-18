@@ -66,7 +66,7 @@
   max-width: 709px;
   position: relative;
   left: 80px;
-  /*margin-top: 183px;*/
+  top: 183px;
   margin: 0;
 }
 .header__span-accent {
@@ -108,7 +108,11 @@
   font-size: 16px;
   line-height: 20px;
   color: #838383;
-  max-width: 683px;
+  margin: 0;
+}
+.header__footer-schedule {
+  display: flex;
+  flex-direction: column;
 }
 .header__paragraph_adress {
   margin-top: auto;
