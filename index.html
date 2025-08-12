@@ -50,22 +50,20 @@
             </li>
           </ul>
         </nav>
-       
-        
-          <h1 class="header__title">
-            <span class="header__span-accent">Café de especialidad</span>
-            en Triple Peaks
-          </h1>
-          <p class="header__description">
-            ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
-            para darte energía y motivar tu creatividad.
-          </p>
-          <img
+
+        <h1 class="header__title">
+          <span class="header__span-accent">Café de especialidad</span>
+          en Triple Peaks
+        </h1>
+        <p class="header__description">
+          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+          para darte energía y motivar tu creatividad.
+        </p>
+        <img
           src="./images/inside_coffee_shop.png"
           alt="images blue coffeshop"
           class="header__image"
         />
-        
 
         <div class="header__footer">
           <div class="header__footer-schedule">
@@ -76,8 +74,8 @@
             <p class="header__paragraph">
               Sábados y Domingos (de 11:00h a 18:00h)
             </p>
-         </div>
-         <div class="header__address">
+          </div>
+          <div class="header__address">
             <p class="header__paragraph">
               Avenida del Éxito 200, Ciudad Triple Peaks.
             </p>
@@ -86,7 +84,7 @@
       </header>
       <main class="content">
         <section class="recipes" id="recipes">
-          <h2 class="recipes__title">Recetas</h2>
+          <h2 class="recipes__title">Recetucas</h2>
           <p class="recipes__subtitle">
             Echa un vistazo a las recetas que hemos reunido para que elabores
             tus propias bebidas.
@@ -122,7 +120,47 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h1 class="reservation__title">Reserva una mesa</h1>
+          <form class="reservation__form">
+            <div class="form__fieldset">
+              <label class="form__label" for="Nombre">Nombre *</label>
+              <input
+                type="text"
+                placeholder="Nombre"
+                class="form__input"
+                id="Nombre"
+                required
+              />
+              <label class="form__label" for="numero"
+                >Numero de comensales *</label
+              >
+              <input
+                type="number"
+                placeholder="1-8"
+                class="form__input"
+                id="numero"
+                required
+              />
+              <label class="form__label" for="fecha">Fecha y Hora *</label>
+              <input type="date" class="form__input" id="fecha" />
+              <label class="form__label" for="correo">Tu email * </label>
+              <input
+                type="email"
+                placeholder="email@dominio.com"
+                class="form__input"
+                id="correo"
+                required
+              />
+            </div>
+            <button type="submit" class="form__button">Reservar</button>
+
+            <label class="form__label">
+              <input type="checkbox" class="form__checkbox" required />
+              Acepto los terminos de uso</label
+            >
+          </form>
+        </section>
       </main>
       <footer class="footer" id="footer"></footer>
     </div>
