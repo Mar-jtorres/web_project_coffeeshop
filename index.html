@@ -32,23 +32,21 @@
   <body>
     <div class="page">
       <header class="header">
-        <nav class="header__nav">
+        <nav class="nav">
           <img
             src="./images/logo_coffeeshop_dark.svg"
             alt="logo triple espresso"
             class="header__nav-logo"
           />
-          <ul class="header__nav-links">
+          <ul class="nav__links">
             <li>
-              <a class="header__nav-link" href="#recipes">Recetas</a>
+              <a class="nav__link" href="#recipes">Recetas</a>
             </li>
             <li>
-              <a class="header__nav-link" href="#reservation"
-                >Reservar una mesa</a
-              >
+              <a class="nav__link" href="#reservation">Reservar una mesa</a>
             </li>
             <li>
-              <a class="header__nav-link" href="#footer">Contactos</a>
+              <a class="nav__link" href="#footer">Contactos</a>
             </li>
           </ul>
         </nav>
@@ -125,53 +123,41 @@
         <section class="reservation" id="reservation">
           <h3 class="reservation__title">Reserva una mesa</h3>
           <form class="form reservation__form">
-            <fieldset class="reservation__form-fieldset">
-              <label class="reservation__form-label" for="Nombre"
-                >Nombre *</label
-              >
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="Nombre">Nombre *</label>
               <input
                 type="text"
                 placeholder="Nombre"
-                class="reservation__form-input"
+                class="form__input"
                 id="Nombre"
                 required
               />
-              <label class="reservation__form-label" for="numero"
+              <label class="form__label" for="numero"
                 >Numero de comensales *</label
               >
               <input
                 type="number"
                 placeholder="1-8"
-                class="reservation__form-input"
+                class="form__input"
                 id="numero"
                 required
               />
-              <label class="reservation__form-label" for="fecha"
-                >Fecha y Hora *</label
-              >
-              <input type="date" class="reservation__form-input" id="fecha" />
-              <label class="reservation__form-label" for="correo"
-                >Tu email *
-              </label>
+              <label class="form__label" for="fecha">Fecha y Hora *</label>
+              <input type="date" class="form__input" id="fecha" />
+              <label class="form__label" for="correo">Tu email * </label>
               <input
                 type="email"
                 placeholder="email@dominio.com"
-                class="reservation__form-input"
+                class="form__input"
                 id="correo"
                 required
               />
             </fieldset>
-            <label class="reservation__form-label">
-              <input
-                type="checkbox"
-                class="reservation__form-checkbox"
-                required
-              />
+            <label class="form__label">
+              <input type="checkbox" class="form__checkbox" required />
               Acepto los terminos de uso
             </label>
-            <button type="submit" class="reservation__form-button">
-              Reservar
-            </button>
+            <button type="submit" class="form__button">Reservar</button>
           </form>
         </section>
       </main>
